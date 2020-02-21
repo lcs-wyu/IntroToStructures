@@ -32,9 +32,24 @@ import Foundation
  
  */
 // Begin your work here...
+struct circle {
+    //The only required property for defining a circle is its radius
+    var radius : Double
+    //Computed property to return the area
+    var area : Double
+    {
+        return radius * radius * Double.pi
+    }
+    var perimeter : Double  {
+        return radius * 2 * Double.pi
+    }
+    
+    
+}
 
+var aCircle = circle(radius:2)
 
-
+aCircle.area
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
